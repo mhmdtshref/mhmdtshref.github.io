@@ -1,12 +1,71 @@
-# React + Vite
+# Mohamed Sharif — Developer Portfolio (Vite + React + Tailwind v4)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Fast, clean, and responsive portfolio showcasing projects like **iMenu**, **TAP Careers**, **SUM**, and **RIS**, built with **Vite**, **React**, and **Tailwind CSS v4**, and deployed via **GitHub Pages**.
 
-Currently, two official plugins are available:
+> 🔗 **Live:** https://<YOUR_USERNAME>.github.io/<REPO_NAME>  
+> 🧰 **Stack:** React, Vite, Tailwind v4, Framer Motion, lucide-react
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Table of Contents
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Content Model](#content-model)
+- [Getting Started](#getting-started)
+- [Build & Deploy (GitHub Pages)](#build--deploy-github-pages)
+- [Configuration (Tailwind v4)](#configuration-tailwind-v4)
+- [SEO](#seo)
+- [Troubleshooting](#troubleshooting)
+- [License](#license)
+- [Credits](#credits)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+- ⚡️ **Blazing dev/build** with Vite
+- 🌓 **Dark/Light toggle** (persists via `localStorage`, overrides OS)
+- 🧩 **Single `data` object** controls all content (easy updates)
+- 🖼️ **Drop-in assets** from `/public` (headshot & resume)
+- 📱 **Responsive** layout with a modern, minimal aesthetic
+- 🚀 **One-click deploy** to GitHub Pages (Actions workflow included)
+
+---
+
+## Screenshots
+> Add your own images under `./screenshots` and update these paths.
+
+| Hero (Light) | Hero (Dark) |
+| --- | --- |
+| ![Hero Light](screenshots/hero-light.jpg) | ![Hero Dark](screenshots/hero-dark.jpg) |
+
+---
+
+## Tech Stack
+- **Frontend:** React, Framer Motion, lucide-react  
+- **Styling:** Tailwind CSS v4 (via `@tailwindcss/postcss`)  
+- **Tooling:** Vite  
+- **Deploy:** GitHub Pages (Actions)
+
+---
+
+## Project Structure
+```
+.
+├─ public/
+│ ├─ personal.png # headshot
+│ └─ Mohamed_Sharif_Resume.pdf # resume
+├─ src/
+│ ├─ index.css # Tailwind + base theme layer
+│ ├─ main.jsx # React entry (imports index.css)
+│ └─ Portfolio.jsx # main component + data object
+├─ tailwind.config.js # Tailwind config (darkMode: 'class')
+├─ postcss.config.js # uses '@tailwindcss/postcss'
+├─ vite.config.js # set base for Pages project sites
+└─ .github/workflows/deploy.yml # GitHub Pages workflow
+```
+
+---
+
+## Thanks for Visiting my Portfolio Project!
