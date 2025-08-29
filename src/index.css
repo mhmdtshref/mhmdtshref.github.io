@@ -1,2 +1,10 @@
-/* v4 style */
+
 @import "tailwindcss";
+@config "../tailwind.config.js";
+
+/* (optional but recommended) make the whole page flip regardless of wrapper classes */
+@layer base {
+  html, body, #root { height: 100%; }
+  body { @apply bg-white text-black; }
+  .dark body { @apply bg-[#0b0d10] text-white; }
+}
